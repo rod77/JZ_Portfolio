@@ -1,0 +1,386 @@
+$color_gray_1:#333333;
+$color_gray_2:#4F4F4F;
+$color_gray_3:#828282;
+$color_pink_1:#FFC4C4;
+$font_principal: 'Euclid Circular B Regular';
+
+@font-face {
+  font-family: 'Euclid Circular B Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Euclid Circular B Regular'), url('Euclid Circular B Regular.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+
+  &_bar {
+
+    overflow: hidden;
+    padding: 8px 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+
+    &__item {
+      padding: 8px 16px;
+      float: left;
+      width: auto;
+      border: none;
+      display: block;
+      outline: 0;
+    }
+
+    &__right {
+      float: right;
+      margin-right: 13vh;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  }
+}
+
+
+.NavBtn__2 {
+  display: inline-block;
+  margin: 8px 12px 8px 12px;
+  border-radius: 0;
+  color: #000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 15px;
+  font-family: $font_principal;
+  font-weight: 500;
+  font-size: 14px;
+  color: $color_gray_1;
+  letter-spacing: 4px;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+  }
+
+  &:before {
+    transition: width 0s ease, background 0.4s ease;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+  }
+
+  &:after {
+    right: 12%;
+    bottom: 6px;
+    background: $color_pink_1;
+    transition: width 0.4s ease;
+  }
+
+  &:hover {
+    &:before {
+      margin-left: 8%;
+      width: 80%;
+      background: $color_pink_1;
+      transition: width 0.4s ease;
+    }
+
+    &:after {
+      margin-left: 38%;
+      width: 80%;
+      background: 0 0;
+      transition: all 0s ease;
+    }
+  }
+}
+
+.pag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.gen {
+  &__title {
+    font-size: 64px;
+    color: $color_gray_1;
+    font-weight: 600;
+    font-family: $font_principal
+  }
+
+
+
+  &__subTitle {
+    font-size: 18px;
+    color: $color_gray_3;
+    font-family: $font_principal
+  }
+}
+
+
+.home__div {
+  display: flex;
+  margin: 0vh 7vh 0 12.5vh;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+
+    &--title {
+      font-size: 60px;
+      color: $color_gray_1;
+      font-weight: 600;
+      font-family: $font_principal;
+      font-style: normal;
+    }
+
+    &--subTitle {
+      font-size: 18px;
+      color: $color_gray_1;
+      font-weight: 400;
+      margin-top: 1vh;
+      margin-right: 5vh;
+      font-family: $font_principal;
+    }
+
+    &--btn {
+      margin-top: 5vh;
+
+    }
+  }
+
+  &__img {
+    margin-right: 3vh;
+    width: 498px;
+    height: auto;
+  }
+
+  &__redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--red {
+      height: 40px;
+      width: 40px;
+      margin: 20px
+    }
+
+  }
+
+}
+
+.sm__div {
+  display: flex;
+  margin: 5vh 13vh 0 20vh;
+
+  &__img {
+    margin-right: 10vh;
+    width: auto;
+    height: 390px;
+  }
+
+  &__column {
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 50px;
+
+    &--desc {
+      font-size: 18px;
+      font-weight: 300;
+      font-family: $font_principal;
+      color: $color_gray_3;
+      margin-right: 13vh;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+
+    &--btn {
+      margin-top: 5vh;
+
+
+    }
+
+  }
+
+}
+
+
+.ser__div {
+  display: flex;
+  margin: 7.5vh 27.5vh 0 27.5vh;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    align-items: center;
+    justify-content: center;
+
+    &--img {
+      width: 250px;
+      height: auto;
+    }
+
+    &--title {
+      margin-top: 3vh;
+      font-size: 24px;
+      color: $color_gray_1;
+      font-family: $font_principal;
+      font-weight: 600;
+
+
+    }
+
+    &--desc {
+      font-size: 18px;
+      color: $color_gray_3;
+      font-family: $font_principal;
+      font-weight: 400;
+
+    }
+  }
+}
+
+
+.proy__div {
+  display: flex;
+  margin: 5vh 35vh 0 35vh;
+  background-color: #E5E5E5;
+  border-radius: 20px;
+
+  &__column {
+    width: 507px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin: 3vh 2vh 0 2vh;
+
+
+    &--title {
+      font-size: 24px;
+      font-weight: 600;
+      color: $color_gray_1;
+      font-family: $font_principal;
+
+    }
+
+    &--desc {
+      font-size: 18px;
+      font-weight: 300;
+      color: $color_gray_2;
+      font-family: $font_principal;
+      margin-top: 2vh;
+      letter-spacing: 1px;
+      line-height: 25px;
+
+      &_tareas {
+        margin-top: 2vh;
+      }
+
+      &_tarea {
+        font-size: 18px;
+        font-weight: 300;
+        color: $color_gray_2;
+        line-height: 30px;
+        font-family: $font_principal;
+      }
+    }
+
+    &--flex {
+      display: flex;
+      justify-content: center;
+      margin-top: 2vh;
+    }
+
+
+  }
+
+  &__img {
+    width: 507px;
+    height: 501px;
+    border-radius: 0 20px 20px 0;
+    border: black solid 1px;
+
+  }
+
+}
+
+.cont__div--btn {
+  margin-top: 5vh;
+}
+
+.btn__1 {
+  width: 20vh;
+  height: 5vh;
+
+  background: transparent;
+  border: none;
+  background-color: #828282;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $font_principal;
+
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #727272;
+    color: white;
+  }
+
+
+}
+
+.linkDecoration_none {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $font_principal;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__redSocial {
+    height: 40px;
+    width: 40px;
+    margin: 10px
+  }
+}

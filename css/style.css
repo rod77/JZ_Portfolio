@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Euclid Circular B Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Euclid Circular B Regular"), url("Euclid Circular B Regular.woff") format("woff"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0; }
+  .nav_bar {
+    overflow: hidden;
+    padding: 8px 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff; }
+    .nav_bar__item {
+      padding: 8px 16px;
+      float: left;
+      width: auto;
+      border: none;
+      display: block;
+      outline: 0; }
+    .nav_bar__right {
+      float: right;
+      margin-right: 13vh; }
+    .nav_bar:before, .nav_bar:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+.NavBtn__2 {
+  display: inline-block;
+  margin: 8px 12px 8px 12px;
+  border-radius: 0;
+  color: #000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 15px;
+  font-family: "Euclid Circular B Regular";
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 4px; }
+  .NavBtn__2:before, .NavBtn__2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0; }
+  .NavBtn__2:before {
+    transition: width 0s ease, background 0.4s ease;
+    left: 0;
+    right: 0;
+    bottom: 6px; }
+  .NavBtn__2:after {
+    right: 12%;
+    bottom: 6px;
+    background: #FFC4C4;
+    transition: width 0.4s ease; }
+  .NavBtn__2:hover:before {
+    margin-left: 8%;
+    width: 80%;
+    background: #FFC4C4;
+    transition: width 0.4s ease; }
+  .NavBtn__2:hover:after {
+    margin-left: 38%;
+    width: 80%;
+    background: 0 0;
+    transition: all 0s ease; }
+
+.pag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.gen__title {
+  font-size: 64px;
+  color: #333333;
+  font-weight: 600;
+  font-family: "Euclid Circular B Regular"; }
+
+.gen__subTitle {
+  font-size: 18px;
+  color: #828282;
+  font-family: "Euclid Circular B Regular"; }
+
+.home__div {
+  display: flex;
+  margin: 0vh 7vh 0 12.5vh; }
+  .home__div__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh; }
+    .home__div__text--title {
+      font-size: 60px;
+      color: #333333;
+      font-weight: 600;
+      font-family: "Euclid Circular B Regular";
+      font-style: normal; }
+    .home__div__text--subTitle {
+      font-size: 18px;
+      color: #333333;
+      font-weight: 400;
+      margin-top: 1vh;
+      margin-right: 5vh;
+      font-family: "Euclid Circular B Regular"; }
+    .home__div__text--btn {
+      margin-top: 5vh; }
+  .home__div__img {
+    margin-right: 3vh;
+    width: 498px;
+    height: auto; }
+  .home__div__redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .home__div__redes--red {
+      height: 40px;
+      width: 40px;
+      margin: 20px; }
+
+.sm__div {
+  display: flex;
+  margin: 5vh 13vh 0 20vh; }
+  .sm__div__img {
+    margin-right: 10vh;
+    width: auto;
+    height: 390px; }
+  .sm__div__column {
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 50px; }
+    .sm__div__column--desc {
+      font-size: 18px;
+      font-weight: 300;
+      font-family: "Euclid Circular B Regular";
+      color: #828282;
+      margin-right: 13vh;
+      letter-spacing: 1px;
+      line-height: 25px; }
+    .sm__div__column--btn {
+      margin-top: 5vh; }
+
+.ser__div {
+  display: flex;
+  margin: 7.5vh 27.5vh 0 27.5vh; }
+  .ser__div__column {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    align-items: center;
+    justify-content: center; }
+    .ser__div__column--img {
+      width: 250px;
+      height: auto; }
+    .ser__div__column--title {
+      margin-top: 3vh;
+      font-size: 24px;
+      color: #333333;
+      font-family: "Euclid Circular B Regular";
+      font-weight: 600; }
+    .ser__div__column--desc {
+      font-size: 18px;
+      color: #828282;
+      font-family: "Euclid Circular B Regular";
+      font-weight: 400; }
+
+.proy__div {
+  display: flex;
+  margin: 5vh 35vh 0 35vh;
+  background-color: #E5E5E5;
+  border-radius: 20px; }
+  .proy__div__column {
+    width: 507px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 3vh 2vh 0 2vh; }
+    .proy__div__column--title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #333333;
+      font-family: "Euclid Circular B Regular"; }
+    .proy__div__column--desc {
+      font-size: 18px;
+      font-weight: 300;
+      color: #4F4F4F;
+      font-family: "Euclid Circular B Regular";
+      margin-top: 2vh;
+      letter-spacing: 1px;
+      line-height: 25px; }
+      .proy__div__column--desc_tareas {
+        margin-top: 2vh; }
+      .proy__div__column--desc_tarea {
+        font-size: 18px;
+        font-weight: 300;
+        color: #4F4F4F;
+        line-height: 30px;
+        font-family: "Euclid Circular B Regular"; }
+    .proy__div__column--flex {
+      display: flex;
+      justify-content: center;
+      margin-top: 2vh; }
+  .proy__div__img {
+    width: 507px;
+    height: 501px;
+    border-radius: 0 20px 20px 0;
+    border: black solid 1px; }
+
+.cont__div--btn {
+  margin-top: 5vh; }
+
+.btn__1 {
+  width: 20vh;
+  height: 5vh;
+  background: transparent;
+  border: none;
+  background-color: #828282;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Euclid Circular B Regular";
+  letter-spacing: 1px; }
+  .btn__1:hover {
+    background-color: #727272;
+    color: white; }
+
+.linkDecoration_none {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Euclid Circular B Regular"; }
+  .linkDecoration_none:link {
+    text-decoration: none; }
+  .linkDecoration_none:visited {
+    text-decoration: none; }
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .foot__redSocial {
+    height: 40px;
+    width: 40px;
+    margin: 10px; }
