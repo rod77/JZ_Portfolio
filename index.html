@@ -15,39 +15,38 @@
     <!--------------->
     <!-- !NAV BAR! -->
     <!--------------->
+    <a href="#home" class="btn-flotante"><img src="./img/home.png" class="btn-flotante--img"></a>
     <div class="nav">
         <div class="nav_bar">
-            <a href="#home" class="nav_bar__item NavBtn__2"><span class="J_in">J</span><span class="Z_in">Z</span></a>
-
+            <div class="nav_bar__item_jz">
+                <a href="#home" class="nav_bar__item nav_bar__item_jz NavBtn__2">JZ</a>
+            </div>
             <div class="nav_bar__right">
                 <a href="#SobreMi" class="nav_bar__item NavBtn__2">SOBRE MI</a>
                 <a href="#Servicios" class="nav_bar__item NavBtn__2">SERVICIOS</a>
                 <a href="#Proyectos" class="nav_bar__item NavBtn__2">PROYECTOS</a>
                 <a href="#Contacto" class="nav_bar__item NavBtn__2">CONTACTO</a>
             </div>
+
         </div>
     </div>
 
     <!------------>
     <!-- !HOME! -->
     <!------------>
-    <!-- <div class="pag" id="home">
-        <p class="home__1">-------------------------------</p>
-        <h1 class="home__2">JZ</h1>
-        <h3 class="home__3">Julieta Zerial</h3>
-        <h4 class="home__4">Desarrolladora Web</h4>
-        <p class="home__5">-------------------------------</p>
-    </div> -->
-
     <div class="pag home" id="home">
         <div class="home__div">
             <div class="home__div__text">
                 <h2 class="home__div__text--title mov1">Lorem,</h2>
                 <h2 class="home__div__text--title mov2">Lorem ipsum</h2>
                 <p class="home__div__text--subTitle mov3">lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-                <button class="home__div__text--btn btn__1 mov4">CAT</button>
+                <div class="home__div__text--flex">
+                    <button class="home__div__text--btn btn__1 mov4">CAT</button>
+                </div>
             </div>
-            <img class="home__div__img mov5" src="./img/img_prueba01.jpg" alt="imagen de prueba">
+            <div class="home__div__img--flex">
+                <img class="home__div__img mov5" src="./img/img_prueba01.jpg" alt="imagen de prueba">
+            </div>
             <div class="home__div__redes">
                 <img src="./img/red__1.png" alt="Red Social 1" class="home__div__redes--red mov6">
                 <img src="./img/red__2.png" alt="Red Social 2" class="home__div__redes--red mov7">
@@ -63,7 +62,9 @@
         <h2 class="gen__title">Sobre mí</h2>
         <p class="gen__subTitle">Lorem ipsum lorem ipsum lorem ipsum</p>
         <div class="sm__div">
-            <img class="sm__div__img" src="./img/img_prueba02.jpg" alt="imagen de prueba">
+            <div class="sm__div__img--flex">
+                <img class="sm__div__img" src="./img/img_prueba02.jpg" alt="imagen de prueba">
+            </div>
             <div class="sm__div__column">
                 <p class="sm__div__column--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa etiam
                     porta cum urna. Elementum, risus et velit et. Elementum dignissim viverra donec pellentesque urna
@@ -89,18 +90,22 @@
 
             <div class="ser__div__column">
                 <img class="ser__div__column--img" src="./img/img_prueba03.jpg" alt="imagen de prueba">
-                <p class="ser__div__column--title">
-                    Desarrollo Web
-                </p>
-                <p class="ser__div__column--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+                <div class="ser__div__column--flex">
+                    <p class="ser__div__column--title">
+                        Desarrollo Web
+                    </p>
+                    <p class="ser__div__column--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+                </div>
             </div>
 
             <div class="ser__div__column">
                 <img class="ser__div__column--img" src="./img/img_prueba05.jpg" alt="imagen de prueba">
-                <p class="ser__div__column--title">
-                    Desarrollo Web
-                </p>
-                <p class="ser__div__column--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+                <div class="ser__div__column--flex">
+                    <p class="ser__div__column--title">
+                        Desarrollo Web
+                    </p>
+                    <p class="ser__div__column--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+                </div>
             </div>
 
         </div>
@@ -119,11 +124,12 @@
                 <p class="proy__div__column--title">
                     Sitio Web: <br> Boutique Apartments Buenos Aires
                 </p>
-                <p class="proy__div__column--desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa etiam
+                <div class="proy__div__column--desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                    etiam
                     porta cum urna. Elementum, risus et velit et. Elementum dignissim viverra donec pellentesque urna
                     tellus. Purus tempus neque, iaculis pellentesque nisi. At nisi turpis massa, sit sed. Ut nibh nisl
-                    tempor, id at gravida sed. </p>
-                <p class="proy__div__column--desc">Tareas realizadas en el proyecto:</p>
+                    tempor, id at gravida sed. </div>
+                <div class="proy__div__column--desc">Tareas realizadas en el proyecto:</div>
                 <div class="proy__div__column--desc_tareas">
                     <p class="proy__div__column--desc_tarea">- Tarea 1</p>
                     <p class="proy__div__column--desc_tarea">- Tarea 2</p>
