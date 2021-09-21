@@ -55,3 +55,33 @@ ScrollReveal().reveal(".mov8", {
   reset: false,
   delay: 2500,
 });
+
+
+ScrollReveal().reveal(".mov9", {
+  duration: 1000,
+  origin: "right",
+  distance: "400px",
+  reset: false,
+  delay: 3000,
+});
+
+$("#menu").hide();
+$(".cierreMenu").hide();
+
+$(".cierreMenu").click(() => {
+  $("#menu").hide();
+  $(".cierreMenu").hide();
+  $(".menu").show();
+});
+
+$(".menu").click(() => {
+  $("#menu").fadeIn("slow");
+  $(".menu").hide();
+  $(".cierreMenu").show();
+});
+
+$(".navmob__items--i").click(()=>{
+  $("#menu").hide();
+  $(".cierreMenu").hide();
+  $(".menu").show();
+})

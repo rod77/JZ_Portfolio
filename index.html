@@ -15,7 +15,7 @@
     <!--------------->
     <!-- !NAV BAR! -->
     <!--------------->
-    <a href="#home" class="btn-flotante"><img src="./img/home.png" class="btn-flotante--img"></a>
+    <!-- <a href="#home" class="btn-flotante"><img src="./img/home.png" class="btn-flotante--img"></a> -->
     <div class="nav">
         <div class="nav_bar">
             <div class="nav_bar__item_jz">
@@ -31,26 +31,48 @@
         </div>
     </div>
 
+    <div class="navmob">
+        <div class="navmob__bar">
+            <a href="#home" class="navmob_JZ ">JZ</a>
+            <img class="navmob__open menu" src="/img/menu.png" alt="Menu">
+            <img class="navmob__open cierreMenu" src="/img/menu.png" alt="Cierre Menu">
+        </div>
+        <div class="navmob__items" id="menu">
+            <a href="#SobreMi" class="navmob__items--i">SOBRE MI</a>
+            <a href="#Servicios" class="navmob__items--i">SERVICIOS</a>
+            <a href="#Proyectos" class="navmob__items--i">PROYECTOS</a>
+            <a href="#Contacto" class="navmob__items--i">CONTACTO</a>
+        </div>
+
+
+    </div>
+
     <!------------>
     <!-- !HOME! -->
     <!------------>
-    <div class="pag home" id="home">
-        <div class="home__div">
-            <div class="home__div__text">
-                <h2 class="home__div__text--title mov1">Lorem,</h2>
-                <h2 class="home__div__text--title mov2">Lorem ipsum</h2>
-                <p class="home__div__text--subTitle mov3">lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-                <div class="home__div__text--flex">
-                    <button class="home__div__text--btn btn__1 mov4">CAT</button>
+    <div class="pag" id="home">
+        <div class="home">
+            <div class="home__div">
+                <div class="home__div__text">
+                    <h2 class="home__div__text--title mov1">Hola 👋,</h2>
+                    <h2 class="home__div__text--title mov2">soy <span class="colorGreen1">Julieta</span>! </h2>
+                    <p class="home__div__text--subTitle mov3">Hago Desarrollo y Maquetación Web</p>
+                    <div class="home__div__text--flex">
+                        <a href="#Contacto"><button class="home__div__text--btn mov4">Contactame</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="home__div__img--flex">
-                <img class="home__div__img mov5" src="./img/img_prueba01.jpg" alt="imagen de prueba">
-            </div>
-            <div class="home__div__redes">
-                <img src="./img/red__1.png" alt="Red Social 1" class="home__div__redes--red mov6">
-                <img src="./img/red__2.png" alt="Red Social 2" class="home__div__redes--red mov7">
-                <img src="./img/red__3.png" alt="Red Social 3" class="home__div__redes--red mov8">
+
+                <img class="home__div__img mov5" src="./img/img_prueba.png" alt="imagen de prueba">
+
+                <!-- <div class="home__div__redes">
+                    <img src="./img/red__1.png" alt="Red Social Facebook" class="home__div__redes--red mov6">
+                    <img src="./img/red__2.png" alt="Red Social Twitter" class="home__div__redes--red mov7">
+                    <img src="./img/red__3.png" alt="Red Social Instagram" class="home__div__redes--red mov8">
+                    <img src="./img/red__4.png" alt="Red Social Behance" class="home__div__redes--red mov9">
+                </div> -->
+                <div class="home__div__column3">
+                    <img class="home__div__column3__fondo" src="./img/fondo__0.png" alt="Fondo">
+                </div>
             </div>
         </div>
     </div>
@@ -58,122 +80,280 @@
     <!---------------->
     <!-- !SOBRE MI! -->
     <!---------------->
-    <div class="pag sm" id="SobreMi">
-        <h2 class="gen__title">Sobre mí</h2>
-        <p class="gen__subTitle">Lorem ipsum lorem ipsum lorem ipsum</p>
-        <div class="sm__div">
-            <div class="sm__div__img--flex">
-                <img class="sm__div__img" src="./img/img_prueba02.jpg" alt="imagen de prueba">
+    <div class="pag" id="SobreMi">
+        <div class="sm">
+            <div class="sm__column1">
+                <img class="sm__column1__fondo" src="./img/fondo__1.png" alt="Fondo de pantalla">
+                <img class="sm__column1__img" src="./img/img_prueba.png" alt="Imagen Sobre Mí">
+                <img class="sm__column1__img_2" src="./img/img_prueba.png" alt="Efecto a imagen">
+
             </div>
-            <div class="sm__div__column">
-                <p class="sm__div__column--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa etiam
+            <div class="sm__column2">
+                <div class="sm__column2__title">Sobre mí <span class="sm__column2__title--icon">👩🏻‍💻</span></div>
+                <div class="sm__column2__subTitle">Lorem ipsum lorem ipsum lorem ipsum</div>
+                <p class="sm__column2__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa etiam
                     porta cum urna. Elementum, risus et velit et. Elementum dignissim viverra donec pellentesque urna
                     tellus. Purus tempus neque, iaculis pellentesque nisi. At nisi turpis massa, sit sed. Ut nibh nisl
                     tempor, id at gravida sed. Rutrum vulputate duis gravida sit venenatis, urna. Ornare accumsan tortor
                     tincidunt facilisi mauris, nulla.
                 </p>
-                <button class="sm__div__column--btn btn__1">Descargar CV</button>
+                <div class="sm__column2__btn--flex">
+                    <button class="sm__column2__btn ">Descargar CV</button>
+                </div>
             </div>
         </div>
-
     </div>
-
 
     <!----------------->
     <!-- !SERVICIOS! -->
     <!----------------->
 
-    <div class="pag ser" id="Servicios">
-        <h2 class="gen__title">Servicios</h2>
-        <p class="gen__subTitle">Lorem ipsum lorem ipsum lorem ipsum</p>
-        <div class="ser__div">
-
-            <div class="ser__div__column">
-                <img class="ser__div__column--img" src="./img/img_prueba03.jpg" alt="imagen de prueba">
-                <div class="ser__div__column--flex">
-                    <p class="ser__div__column--title">
-                        Desarrollo Web
-                    </p>
-                    <p class="ser__div__column--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+    <div class="pag" id="Servicios">
+        <div class="ser">
+            <div class="ser__column1">
+                <img class="ser__column1__fondo" src="./img/fondo__2.png" alt="Fondo de pantalla">
+            </div>
+            <div class="ser__column2">
+                <div class="ser__column2__title">Servicios</div>
+                <div class="ser__column2__subTitle">Lorem ipsum lorem ipsum lorem ipsum</div>
+                <div class="ser__column2__servicios">
+                    <div class="ser__column2__servicios_uno">
+                        <div class="ser__column2__servicios_uno--img--fondo">
+                            <img class="ser__column2__servicios_uno--img" src="./img/img_servicio01.png"
+                                alt="Imagen de un servicio">
+                        </div>
+                        <p class="ser__column2__servicios_uno--title">
+                            Desarrollo Web
+                        </p>
+                        <p class="ser__column2__servicios_uno--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+                    </div>
+                    <div class="ser__column2__servicios_uno">
+                        <div class="ser__column2__servicios_uno--img--fondo">
+                            <img class="ser__column2__servicios_uno--img" src="./img/img_servicio02.png"
+                                alt="Imagen de un servicio">
+                        </div>
+                        <p class="ser__column2__servicios_uno--title">
+                            Maquetación Web
+                        </p>
+                        <p class="ser__column2__servicios_uno--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
+                    </div>
                 </div>
             </div>
-
-            <div class="ser__div__column">
-                <img class="ser__div__column--img" src="./img/img_prueba05.jpg" alt="imagen de prueba">
-                <div class="ser__div__column--flex">
-                    <p class="ser__div__column--title">
-                        Desarrollo Web
-                    </p>
-                    <p class="ser__div__column--desc"> Lorem ipsum lorem <br> ipsum lorem ipsum </p>
-                </div>
+            <div class="ser__column3">
+                <img class="ser__column3__fondo" src="./img/fondo__3.png" alt="Fondo de pantalla">
             </div>
-
         </div>
     </div>
+
+
 
     <!----------------->
     <!-- !PROYECTOS! -->
     <!----------------->
-    <div class="pag proy" id="Proyectos">
-        <h2 class="gen__title">Proyectos</h2>
-        <p class="gen__subTitle">Lorem ipsum dolor sit</p>
-        <div class="proy__div">
+    <div class="pagProy" id="Proyectos">
+        <div class="proyect">
+            <img class="proyect__fondo1" src="./img/fondo__4.png" alt="Fondo de pantalla">
+            <div class="proy">
+                <div class="proy__title">Proyectos</div>
+                <div class="proy__subTitle">Lorem ipsum dolor sit</div>
+                <div class="proy__row">
+                    <div class="proy__row__column1">
+                        <div class="proy__row__column1--title">
+                            Diseño Web
+                        </div>
+                        <div class="proy__row__column1--desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Massa
+                            etiam
+                            porta cum urna. Elementum, risus et velit et. Elementum dignissim viverra donec pellentesque
+                            urna
+                            tellus. Purus tempus neque, iaculis pellentesque nisi. At nisi turpis massa, sit sed. Ut
+                            nibh
+                            nisl
+                            tempor, id at gravida sed. </div>
+                        <div class="proy__row__column1--tareasTitle">
 
-            <div class="proy__div__column">
+                            <p>Tareas realizadas en el proyecto:</p>
+                        </div>
+                        <div class="proy__row__column1--tareasFlex">
+                            <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_1.png"
+                                alt="Icono de tarea">
+                            <div class="proy__row__column1--tareasFlex-desc">
+                                Lorem ipsum lorem ipsum
+                            </div>
+                        </div>
+                        <div class="proy__row__column1--tareasFlex">
+                            <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_2.png"
+                                alt="Icono de tarea">
+                            <div class="proy__row__column1--tareasFlex-desc">
+                                Lorem ipsum lorem ipsum
+                            </div>
+                        </div>
 
-                <p class="proy__div__column--title">
-                    Sitio Web: <br> Boutique Apartments Buenos Aires
-                </p>
-                <div class="proy__div__column--desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-                    etiam
-                    porta cum urna. Elementum, risus et velit et. Elementum dignissim viverra donec pellentesque urna
-                    tellus. Purus tempus neque, iaculis pellentesque nisi. At nisi turpis massa, sit sed. Ut nibh nisl
-                    tempor, id at gravida sed. </div>
-                <div class="proy__div__column--desc">Tareas realizadas en el proyecto:</div>
-                <div class="proy__div__column--desc_tareas">
-                    <p class="proy__div__column--desc_tarea">- Tarea 1</p>
-                    <p class="proy__div__column--desc_tarea">- Tarea 2</p>
-                    <p class="proy__div__column--desc_tarea">- Tarea 3</p>
+                    </div>
+                    <div class="proy__row__column2">
+                        <img class="proy__row__column2--img" src="./img/img_proyecto_01.png"
+                            alt="Pagina La Pucha Desing">
+                        <a href="https://julasz.github.io/lapuchadesign/" class="linkDecoration_none"
+                            target="_blank"><button class="proy__row__column2--btn">VER PROYECTO</button></a>
+                    </div>
                 </div>
-                <div class="proy__div__column--flex">
+                <div class="proy__row">
+                    <div class="proy__row__column1">
+                        <div class="proy__row__column1--title">
+                            Diseño Web
+                        </div>
+                        <div class="proy__row__column1--desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Massa
+                            etiam
+                            porta cum urna. Elementum, risus et velit et. Elementum dignissim viverra donec pellentesque
+                            urna
+                            tellus. Purus tempus neque, iaculis pellentesque nisi. At nisi turpis massa, sit sed. Ut
+                            nibh
+                            nisl
+                            tempor, id at gravida sed. </div>
+                        <div class="proy__row__column1--tareasTitle">
 
-                    <button class="proy__div__column--btn btn__1"> <a
-                            href="https://boutiqueapartmentsbuenosaires.netlify.app/" target="_blank"
-                            class="linkDecoration_none"> VER PROYECTO
-                        </a></button>
+                            <p>Tareas realizadas en el proyecto:</p>
+                        </div>
+                        <div class="proy__row__column1--tareasFlex">
+                            <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_1.png"
+                                alt="Icono de tarea">
+                            <div class="proy__row__column1--tareasFlex-desc">
+                                Lorem ipsum lorem ipsum
+                            </div>
+                        </div>
+                        <div class="proy__row__column1--tareasFlex">
+                            <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_2.png"
+                                alt="Icono de tarea">
+                            <div class="proy__row__column1--tareasFlex-desc">
+                                Lorem ipsum lorem ipsum
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="proy__row__column2">
+                        <img class="proy__row__column2--img" src="./img/img_proyecto_00.png"
+                            alt="Pagina Boutique apartments BSAS">
+                        <a href="https://boutiqueapartmentsbuenosaires.netlify.app/" class="linkDecoration_none"
+                            target="_blank"><button class="proy__row__column2--btn">VER PROYECTO</button></a>
+                    </div>
                 </div>
             </div>
-
-            <img class="proy__div__img" src="./img/img_proyecto01.JPG" alt="imagen de prueba">
-
-
+            <img class="proyect__fondo2" src="./img/fondo__5.png" alt="Fondo de pantalla">
+            <img class="proyect__fondo3" src="./img/fondo__6.png" alt="Fondo de pantalla">
         </div>
-
-
-
     </div>
     <!---------------->
     <!-- !CONTACTO! -->
     <!---------------->
-    <div class="pag ser" id="Contacto">
-        <h2 class="gen__title">Contacto</h2>
-        <p class="gen__subTitle">¿Tenes interés en trabajar conmigo?</p>
+    <div class="pagCont" id="Contacto">
+        <div class="cont">
+            <div class="cont__title">Contacto</div>
+            <div class="cont__row1">
+                <img src="./img/cont_img1.png" alt="Imagen de flecha" class="cont__row1__img1">
+                <div class="cont__row1__subTitle">¿Tenes interés en trabajar conmigo?</div>
+                <img src="./img/cont_img2.png" alt="Imagen de flecha" class="cont__row1__img2">
+            </div>
+            <div class="cont__row2">
+                <div class="cont__row2__column0">
+                    <img class="cont__row2__column0__fondo" src="./img/fondo__7.png" alt="Fondo">
+                </div>
+                <div class="cont__row2__column1">
+                    <div class="cont__row2__column1--subtitle">
+                        Completá el formulario para ponernos en contacto
+                    </div>
+                    <div class="cont__row2__column1--form">
+                        <div class="cont__row2__column1--form-name">
+                            <img src="./img/form__1.png" alt="name" class="cont__row2__column1--form-name-img">
+                            <input type="text" id="name" name="name" placeholder="Nombre"
+                                class="cont__row2__column1--form-name-input">
+                        </div>
+                        <div class="cont__row2__column1--form-mail">
+                            <img src="./img/form__2.png" alt="E-mail" class="cont__row2__column1--form-mail-img">
+                            <input type="text" id="fname" name="fname" placeholder="E-mail"
+                                class="cont__row2__column1--form-mail-input">
+                        </div>
+                        <div class="cont__row2__column1--form-comment">
+                            <textarea class="cont__row2__column1--form-comment-txt" rows="10" cols="30"
+                                placeholder="Escribe un mensaje..."></textarea>
+                        </div>
+                        <div class="cont__row2__column1--flex">
+                            <button class="cont__row2__column1--flex--btn">¡Hablemos!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont__row2__column2">
+                    <div class="cont__row2__column2--subtitle">
+                        También podes encontrarme en
+                    </div>
+                    <div class="cont__row2__column2--redes">
+                        <div class="cont__row2__column2--redes12">
+                            <div class="cont__row2__column2--redes12_1">
+                                <div class="cont__row2__column2--redesFondo">
+                                    <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none"
+                                        target="_blank">
+                                        <img src="./img/red__01__face.png" alt="Facebook"
+                                            class="cont__row2__column2--redesFondo--img">
+                                    </a>
+                                </div>
+                                <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none"
+                                    target="_blank">
+                                    <div class="cont__row2__column2--redes12_1--desc">/juli.zerial</div>
+                                </a>
+                            </div>
+                            <div class="cont__row2__column2--redes12_2">
+                                <div class="cont__row2__column2--redesFondo">
+                                    <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
+                                        target="_blank">
+                                        <img src="./img/red__03__inst.png" alt="Instagram"
+                                            class="cont__row2__column2--redesFondo--img">
+                                    </a>
+                                </div>
+                                <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
+                                    target="_blank">
+                                    <div class="cont__row2__column2--redes12_2--desc">/juzerial</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cont__row2__column2--redes34">
+                            <div class="cont__row2__column2--redes34_3">
+                                <div class="cont__row2__column2--redesFondo">
+                                    <a href="https://twitter.com/JuliZerial" class="linkDecoration_none"
+                                        target="_blank">
+                                        <img src="./img/red__02__tw.png" alt="Twitter"
+                                            class="cont__row2__column2--redesFondo--img">
+                                    </a>
+                                </div>
+                                <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
+                                    <div class="cont__row2__column2--redes34_3--desc">/juli.zerial</div>
+                                </a>
+                            </div>
+                            <div class="cont__row2__column2--redes34_4">
+                                <div class="cont__row2__column2--redesFondo">
+                                    <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
+                                        target="_blank">
+                                        <img src="./img/red__04__link.png" alt="Linkedin"
+                                            class="cont__row2__column2--redesFondo--img">
+                                    </a>
+                                </div>
+                                <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
+                                    target="_blank">
+                                    <div class="cont__row2__column2--redes34_4--desc">/juzerial</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont__row2__column3">
+                        <img class="cont__row2__column3__fondo" src="./img/fondo__8.png" alt="Fondo">
+                    </div>
 
-        <button class="cont__div--btn btn__1">¡Hablemos!</button>
 
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="foot">
-            <img src="./img/red__1.png" alt="Red Social 1" class="foot__redSocial">
-            <img src="./img/red__2.png" alt="Red Social 2" class="foot__redSocial">
-            <img src="./img/red__3.png" alt="Red Social 3" class="foot__redSocial">
-
-        </div>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
 </body>
