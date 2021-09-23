@@ -141,7 +141,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 100%; }
 
 .pagCont {
@@ -149,7 +149,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 100%; }
 
 .pagProy {
@@ -157,8 +157,40 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 160vh;
+  height: auto;
   width: 100%; }
+
+.pagSeparador0 {
+  display: none; }
+
+.pagSeparador {
+  height: 500px; }
+
+.pagSeparador2 {
+  height: 200px; }
+
+.pagSeparador3 {
+  height: 250px; }
+
+.pagSeparador4 {
+  height: 150px; }
+
+.pagSeparador5 {
+  height: 150px; }
+
+@media only screen and (max-width: 768px) {
+  .pagSeparador0 {
+    display: inline-block; }
+  .pagSeparador {
+    display: none; }
+  .pagSeparador2 {
+    display: none; }
+  .pagSeparador3 {
+    display: none; }
+  .pagSeparador4 {
+    height: 40px; }
+  .pagSeparador5 {
+    display: none; } }
 
 @media only screen and (max-width: 768px) {
   .pag {
@@ -206,8 +238,8 @@ body {
       font-family: "Euclid Circular B Regular"; }
     .home__div__text--btn {
       margin-top: 4vh;
-      width: 20vh;
-      height: 5vh;
+      width: 185px;
+      height: 45px;
       background: transparent;
       border: none;
       color: #FFFFFF;
@@ -262,13 +294,13 @@ body {
         font-family: "Euclid Circular B Regular"; }
       .home__div__text--btn {
         margin-top: 3vh;
-        width: 20vh;
-        height: 5vh;
+        width: 138.75px;
+        height: 33.75px;
         background: transparent;
         border: none;
         color: #FFFFFF;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 13.5px;
         font-weight: 500;
         font-family: "Euclid Circular B Regular";
         letter-spacing: 1px;
@@ -335,8 +367,8 @@ body {
       letter-spacing: 1px;
       line-height: 25px; }
     .sm__column2__btn {
-      width: 20vh;
-      height: 5vh;
+      width: 185px;
+      height: 45px;
       margin-top: 3vh;
       background: transparent;
       color: #5CD4C3;
@@ -367,14 +399,14 @@ body {
       .sm__column1__fondo {
         z-index: -5;
         left: -40%;
-        bottom: 10%;
+        bottom: -10%;
         height: 375.5px;
         width: 395px;
         position: absolute; }
       .sm__column1__img {
         margin: 0;
-        width: 275px;
-        height: 310px; }
+        width: 220px;
+        height: 248px; }
       .sm__column1__img_2 {
         display: none; }
     .sm__column2 {
@@ -401,18 +433,18 @@ body {
         font-weight: 300;
         font-family: "Euclid Circular B Regular";
         color: #BDBDBD;
-        margin: 2vh 0 0 1vh;
+        margin: 1vh 0 0 1vh;
         letter-spacing: 1px;
         line-height: 20px; }
       .sm__column2__btn {
-        width: 20vh;
-        height: 5vh;
-        margin-top: 1vh;
+        width: 138.75px;
+        height: 33.75px;
+        margin-top: 2vh;
         background: transparent;
         color: #5CD4C3;
         border: 2px solid #5CD4C3;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
         font-family: "Euclid Circular B Regular";
         letter-spacing: 1px;
@@ -663,8 +695,8 @@ body {
         right: 40%;
         bottom: 40%;
         position: absolute;
-        width: 20vh;
-        height: 5vh;
+        width: 185px;
+        height: 45px;
         background: transparent;
         border: none;
         background-color: #FFDADB;
@@ -787,14 +819,14 @@ body {
           right: 25%;
           bottom: 40%;
           position: absolute;
-          width: 20vh;
-          height: 5vh;
+          width: 138px;
+          height: 33.75px;
           background: transparent;
           border: none;
           background-color: #FFDADB;
           color: white;
           border-radius: 10px;
-          font-size: 16px;
+          font-size: 12px;
           font-weight: 500;
           font-family: "Euclid Circular B Regular";
           letter-spacing: 1px;
@@ -910,8 +942,8 @@ body {
         justify-content: flex-end;
         margin: 16px 00px 0px 0px; }
         .cont__row2__column1--flex--btn {
-          width: 20vh;
-          height: 5vh;
+          width: 185px;
+          height: 45px;
           background: transparent;
           border: 2px solid #5CD4C3;
           background-color: #5CD4C3;
@@ -1138,14 +1170,14 @@ body {
           justify-content: center;
           margin: 16px 00px 16px 0px; }
           .cont__row2__column1--flex--btn {
-            width: 20vh;
-            height: 5vh;
+            width: 138.75px;
+            height: 33.75px;
             background: transparent;
             border: 2px solid #5CD4C3;
             background-color: #5CD4C3;
             color: white;
             border-radius: 10px;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 500;
             font-family: "Euclid Circular B Regular";
             letter-spacing: 1px;

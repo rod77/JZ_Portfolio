@@ -222,7 +222,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
@@ -231,7 +231,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
@@ -240,8 +240,58 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 160vh;
+  height: auto;
   width: 100%;
+}
+
+.pagSeparador0 {
+  display: none;
+}
+
+.pagSeparador {
+  height: 500px;
+}
+
+.pagSeparador2 {
+  height: 200px;
+}
+
+.pagSeparador3 {
+  height: 250px;
+}
+
+.pagSeparador4 {
+  height: 150px;
+}
+
+.pagSeparador5 {
+  height: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pagSeparador0 {
+    display: inline-block;
+  }
+
+  .pagSeparador {
+    display: none;
+  }
+
+  .pagSeparador2 {
+    display: none;
+  }
+
+  .pagSeparador3 {
+    display: none;
+  }
+
+  .pagSeparador4 {
+    height: 40px;
+  }
+
+  .pagSeparador5 {
+    display: none;
+  }
 }
 
 
@@ -306,8 +356,8 @@ body {
 
     &--btn {
       margin-top: 4vh;
-      width: 20vh;
-      height: 5vh;
+      width: 185px;
+      height: 45px;
       background: transparent;
       border: none;
       color: #FFFFFF;
@@ -386,13 +436,13 @@ body {
 
       &--btn {
         margin-top: 3vh;
-        width: 20vh;
-        height: 5vh;
+        width: 138.75px;
+        height: 33.75px;
         background: transparent;
         border: none;
         color: #FFFFFF;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 13.5px;
         font-weight: 500;
         font-family: $font_principal;
         letter-spacing: 1px;
@@ -493,8 +543,8 @@ body {
     }
 
     &__btn {
-      width: 20vh;
-      height: 5vh;
+      width: 185px;
+      height: 45px;
       margin-top: 3vh;
       background: transparent;
       color: $color_green_2;
@@ -546,7 +596,7 @@ body {
       &__fondo {
         z-index: -5;
         left: -40%;
-        bottom: 10%;
+        bottom: -10%;
         height: 375.5px;
         width: 395px;
         position: absolute;
@@ -554,8 +604,8 @@ body {
 
       &__img {
         margin: 0;
-        width: 275px;
-        height: 310px;
+        width: 220px;
+        height: 248px;
       }
 
       &__img_2 {
@@ -596,20 +646,20 @@ body {
         font-weight: 300;
         font-family: $font_principal;
         color: $color_gray_5;
-        margin: 2vh 0 0 1vh;
+        margin: 1vh 0 0 1vh;
         letter-spacing: 1px;
         line-height: 20px;
       }
 
       &__btn {
-        width: 20vh;
-        height: 5vh;
-        margin-top: 1vh;
+        width: 138.75px;
+        height: 33.75px;
+        margin-top: 2vh;
         background: transparent;
         color: $color_green_2;
         border: 2px solid $color_green_2;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
         font-family: $font_principal;
         letter-spacing: 1px;
@@ -986,8 +1036,8 @@ body {
         right: 40%;
         bottom: 40%;
         position: absolute;
-        width: 20vh;
-        height: 5vh;
+        width: 185px;
+        height: 45px;
         background: transparent;
         border: none;
         background-color: $color_pink_2;
@@ -1168,14 +1218,14 @@ body {
           right: 25%;
           bottom: 40%;
           position: absolute;
-          width: 20vh;
-          height: 5vh;
+          width: 138px;
+          height: 33.75px;
           background: transparent;
           border: none;
           background-color: $color_pink_2;
           color: white;
           border-radius: 10px;
-          font-size: 16px;
+          font-size: 12px;
           font-weight: 500;
           font-family: $font_principal;
           letter-spacing: 1px;
@@ -1341,8 +1391,8 @@ body {
 
         &--btn {
 
-          width: 20vh;
-          height: 5vh;
+          width: 185px;
+          height: 45px;
 
           background: transparent;
           border: 2px solid $color_green_2;
@@ -1672,15 +1722,15 @@ body {
           margin: 16px 00px 16px 0px;
 
           &--btn {
-            width: 20vh;
-            height: 5vh;
+            width: 138.75px;
+            height: 33.75px;
 
             background: transparent;
             border: 2px solid $color_green_2;
             background-color: $color_green_2;
             color: white;
             border-radius: 10px;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 500;
             font-family: $font_principal;
 
