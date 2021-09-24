@@ -11,8 +11,36 @@
 body {
   background-color: #FDFDFD; }
 
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth; } }
+
 .colorGreen1 {
   color: #BFEDE6; }
+
+.btnVueltaIr {
+  height: 84px;
+  width: 84px;
+  animation: slide1 1s ease-in-out infinite; }
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(10px, 0); } }
+
+@media only screen and (max-width: 768px) {
+  .btnVueltaIr {
+    height: 42px;
+    width: 42px;
+    animation: slide1 1s ease-in-out infinite; }
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0); }
+    50% {
+      transform: translate(10px, 0); } } }
 
 .nav {
   position: fixed;
@@ -44,16 +72,13 @@ body {
 @media only screen and (max-width: 768px) {
   .nav {
     display: none; }
-  .navmob_bar__items {
-    opacity: 1; }
   .navmob {
     display: flex;
     flex-direction: column;
     position: fixed;
     width: 100%;
-    z-index: 1;
-    top: 0;
-    padding: 10px 0px;
+    z-index: 1030;
+    padding: 10px 0px 10px 0px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: #fff; }
     .navmob_JZ {
@@ -69,7 +94,7 @@ body {
       float: left; }
     .navmob__open {
       float: right;
-      margin-right: 10px; }
+      margin-right: 30px; }
     .navmob__items {
       display: flex;
       flex-direction: column;
@@ -188,7 +213,7 @@ body {
   .pagSeparador3 {
     display: none; }
   .pagSeparador4 {
-    height: 40px; }
+    height: 150px; }
   .pagSeparador5 {
     display: none; } }
 
@@ -205,7 +230,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200vh;
+    height: 140vmax;
     width: 100%; }
   .pagCont {
     display: flex;
@@ -229,6 +254,8 @@ body {
       font-weight: 600;
       font-family: "Euclid Circular B Regular";
       font-style: normal; }
+    .home__div__text--icon {
+      height: auto; }
     .home__div__text--subTitle {
       font-size: 18px;
       color: #8a817c;
@@ -285,6 +312,9 @@ body {
         font-weight: 600;
         font-family: "Euclid Circular B Regular";
         font-style: normal; }
+      .home__div__text--icon {
+        height: 60px;
+        width: auto; }
       .home__div__text--subTitle {
         font-size: 18px;
         color: #8a817c;
@@ -334,8 +364,8 @@ body {
       height: 310px; }
     .sm__column1__img_2 {
       z-index: -5;
-      right: 15%;
-      bottom: 5%;
+      left: 10%;
+      bottom: 20%;
       position: absolute;
       width: 275px;
       height: 310px;
@@ -362,10 +392,12 @@ body {
       font-weight: 300;
       font-family: "Euclid Circular B Regular";
       color: #BDBDBD;
-      margin-top: 5vh;
+      margin-top: 2vh;
       margin-right: 13vh;
       letter-spacing: 1px;
       line-height: 25px; }
+    .sm__column2__desc p {
+      margin-top: 1vh; }
     .sm__column2__btn {
       width: 185px;
       height: 45px;
@@ -399,9 +431,9 @@ body {
       .sm__column1__fondo {
         z-index: -5;
         left: -40%;
-        bottom: -10%;
-        height: 375.5px;
-        width: 395px;
+        bottom: 30%;
+        height: 100%;
+        width: auto;
         position: absolute; }
       .sm__column1__img {
         margin: 0;
@@ -623,56 +655,63 @@ body {
     color: #BDBDBD;
     font-family: "Euclid Circular B Regular";
     margin-top: 1vh; }
+  .proy__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
   .proy__row {
     display: flex;
     flex-direction: row;
     margin-top: 42px;
     justify-content: center;
     width: 1226px;
-    height: 570px;
+    height: 474px;
     background-color: #ffffff;
     box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.03);
     border-radius: 20px; }
     .proy__row__column1 {
       display: flex;
       flex-direction: column;
-      margin: 94px 86px 0 70px; }
+      margin: 42px 66px 40px 62px; }
       .proy__row__column1--title {
-        font-size: 24px;
-        font-weight: 600;
+        font-size: 22px;
+        font-weight: 500;
         color: #1D1C24;
         font-family: "Euclid Circular B Regular"; }
+        .proy__row__column1--title-B {
+          font-size: 24px;
+          font-weight: 600; }
       .proy__row__column1--desc {
         font-size: 16px;
         font-weight: 300;
         color: #8a817c;
         font-family: "Euclid Circular B Regular";
-        margin-top: 2vh;
+        margin-top: 10px;
         letter-spacing: 1px;
         line-height: 25px; }
       .proy__row__column1--tareasTitle {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         color: #8a817c;
         font-family: "Euclid Circular B Regular";
-        margin-top: 2vh;
+        margin-top: 27px;
         letter-spacing: 1px;
         line-height: 25px; }
       .proy__row__column1--tareasFlex {
         display: flex;
         flex-direction: row;
-        margin-top: 20px; }
+        margin-top: 19px; }
         .proy__row__column1--tareasFlex-img {
-          height: 45px;
-          width: 45px; }
+          height: 36px;
+          width: 36px; }
         .proy__row__column1--tareasFlex-desc {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           color: #8a817c;
           font-family: "Euclid Circular B Regular";
           letter-spacing: 1px;
           line-height: 25px;
-          margin-top: 10px;
+          margin-top: 4px;
           margin-left: 1.5vh; }
     .proy__row__column2 {
       position: relative; }
@@ -685,15 +724,15 @@ body {
         opacity: 1;
         z-index: 3; }
       .proy__row__column2--img {
-        width: 603px;
-        height: 498px;
+        width: 508px;
+        height: 419.54px;
         border-radius: 20px;
-        margin-top: 36px;
+        margin-top: 27px;
         z-index: 1;
-        margin-right: 65px; }
+        margin-right: 50px; }
       .proy__row__column2--btn {
-        right: 40%;
-        bottom: 40%;
+        right: 37.5%;
+        bottom: 37.5%;
         position: absolute;
         width: 185px;
         height: 45px;
@@ -742,7 +781,18 @@ body {
       color: #BDBDBD;
       font-family: "Euclid Circular B Regular";
       margin-top: 1vh; }
+    .proy__btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .proy__btn__ir {
+        order: 1;
+        margin-left: 20px; }
+      .proy__btn__vuelta {
+        order: 2;
+        margin-right: 20px; }
     .proy__row {
+      order: 3;
       display: flex;
       flex-direction: column;
       margin-top: 10px;

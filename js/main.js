@@ -85,3 +85,27 @@ $(".navmob__items--i").click(()=>{
   $(".cierreMenu").hide();
   $(".menu").show();
 })
+$(".navmob_JZ").click(()=>{
+  $("#menu").hide();
+  $(".cierreMenu").hide();
+  $(".menu").show();
+})
+
+$("#proy02").hide();
+$(".proy__btn__vuelta").hide();
+
+
+
+$(".proy__btn__ir").click(()=>{
+  $("#proy01").hide(0);
+  $("#proy02").show(0);
+  $(".proy__btn__ir").hide();
+  $(".proy__btn__vuelta").show();
+}) 
+$(".proy__btn__vuelta").click(()=>{
+  $("#proy02").hide(0);
+  $("#proy01").show(0);
+  $(".proy__btn__ir").show();
+  $(".proy__btn__vuelta").hide();
+}) 
+  
