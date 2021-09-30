@@ -34,21 +34,20 @@
 
     <div class="navmob">
         <div class="navmob__bar">
-            <a href="#home2" class="navmob_JZ">JZ</a>
+            <a href="#home" class="navmob_JZ">JZ</a>
             <img class="navmob__open menu" src="./img/menu.png" alt="Menu">
             <img class="navmob__open cierreMenu" src="./img/menu.png" alt="Cierre Menu">
         </div>
         <div class="navmob__items" id="menu">
             <a href="#SobreMi" class="navmob__items--i">SOBRE MI</a>
-            <a href="#Servicios2" class="navmob__items--i">SERVICIOS</a>
+            <a href="#Servicios" class="navmob__items--i">SERVICIOS</a>
             <a href="#Proyectos" class="navmob__items--i">PROYECTOS</a>
             <a href="#Contacto" class="navmob__items--i">CONTACTO</a>
         </div>
 
 
     </div>
-    <div class="pagSeparador3" id="home"></div>
-    <div id="home2"></div>
+    <div class="pagSeparadorHome" id="home"></div>
 
     <!------------>
     <!-- !HOME! -->
@@ -68,21 +67,40 @@
 
                 <img class="home__div__img mov5" src="./img/img_prueba.png" alt="imagen de prueba">
 
-                <!-- <div class="home__div__redes">
-                    <img src="./img/red__1.png" alt="Red Social Facebook" class="home__div__redes--red mov6">
-                    <img src="./img/red__2.png" alt="Red Social Twitter" class="home__div__redes--red mov7">
-                    <img src="./img/red__3.png" alt="Red Social Instagram" class="home__div__redes--red mov8">
-                    <img src="./img/red__4.png" alt="Red Social Behance" class="home__div__redes--red mov9">
-                </div> -->
+                <div class="home__div__redes">
+                    <div class="home__div__redesFondo mov6">
+                        <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                            <img src="./img/red__04__link.png" alt="Linkedin" class="home__div__redesFondo--img">
+                        </a>
+                    </div>
+                    <div class="home__div__redesFondo mov7">
+                        <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
+                            <img src="./img/red__02__tw.png" alt="Twitter" class="home__div__redesFondo--img">
+                        </a>
+                    </div>
+                    <div class="home__div__redesFondo mov8">
+
+                        <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none" target="_blank">
+                            <img src="./img/red__01__face.png" alt="Facebook" class="home__div__redesFondo--img">
+                        </a>
+                    </div>
+                    <div class="home__div__redesFondo mov9">
+                        <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                            <img src="./img/red__03__inst.png" alt="Instagram" class="home__div__redesFondo--img">
+                        </a>
+                    </div>
+                </div>
                 <div class="home__div__column3">
                     <img class="home__div__column3__fondo" src="./img/fondo__0.png" alt="Fondo">
                 </div>
             </div>
         </div>
     </div>
-    <div class="pagSeparador"></div>
+    <div class="pagSeparadorArrow"></div>
+    <div class="imgArrow"><img src="/img/arrow.png" alt="Flecha"></div>
+    <div class="pagSeparadorSM0"></div>
     <div id="SobreMi"></div>
-    <div class="pagSeparador2"></div>
+    <div class="pagSeparadorSM1"></div>
     <!---------------->
     <!-- !SOBRE MI! -->
     <!---------------->
@@ -90,9 +108,7 @@
         <div class="sm">
             <div class="sm__column1">
                 <img class="sm__column1__fondo" src="./img/fondo__1.png" alt="Fondo de pantalla">
-                <img class="sm__column1__img" src="./img/img_prueba.png" alt="Imagen Sobre Mí">
-                <img class="sm__column1__img_2" src="./img/img_prueba.png" alt="Efecto a imagen">
-
+                <img class="sm__column1__img" src="./img/img_prueba_SM.png" alt="Imagen Sobre Mí">
             </div>
             <div class="sm__column2">
                 <div class="sm__column2__title">Sobre mí <span class="sm__column2__title--icon"><img
@@ -112,9 +128,9 @@
             </div>
         </div>
     </div>
-    <div class="pagSeparador"></div>
+    <div class="pagSeparadorSER0"></div>
     <div id="Servicios"></div>
-    <div class="pagSeparador5"></div>
+    <div class="pagSeparadorSER1"></div>
     <!----------------->
     <!-- !SERVICIOS! -->
     <!----------------->
@@ -161,9 +177,9 @@
             </div>
         </div>
     </div>
-    <div class="pagSeparador"></div>
+    <div class="pagSeparadorPROY0"></div>
     <div id="Proyectos"></div>
-    <div class="pagSeparador4"></div>
+    <div class="pagSeparadorPROY1"></div>
 
     <!----------------->
     <!-- !PROYECTOS! -->
@@ -176,7 +192,9 @@
                 <div class="proy__subTitle">Desarrollo Web | Maquetación Web </div>
                 <div class="proy__btn">
                     <div class="proy__btn__vuelta">
-                        <img class="btnVueltaIr" src="./img/boton_vuelta.png" alt="Proyecto anterior">
+                        <img src="./img/boton_vuelta.png" alt="Proyecto anterior"
+                            class="proy__btn__vueltaImg btnVueltaIr">
+                        <div class="proy__btn__vueltaImg-bloque"></div>
                     </div>
                     <!-- Desde aca Empieza un proyecto  -->
                     <div class="proy__row" id="proy01">
@@ -188,7 +206,7 @@
                                 Se desarrolló la página de una empresa hotelera situada en Capital Federal,
                                 son dos socios que apostaron a la inmobiliaria en Argentina y están a cargo de
                                 la administración de departamentos y hoteles dentro de la ciudad, quienes quedaron
-                                sumamente agradecidos y aumentaron sus ventas
+                                sumamente agradecidos y aumentaron sus ventas.
                             </div>
                             <div class="proy__row__column1--tareasTitle">
 
@@ -220,9 +238,12 @@
 
                         </div>
                         <div class="proy__row__column2">
+                            <div class="proy__row__column2--title">
+                                <span class="proy__row__column2--title-Mob">Boutique Apartments BA</span>
+                            </div>
                             <img class="proy__row__column2--img" src="./img/img_proyecto_00.png"
                                 alt="Pagina La Pucha Desing">
-                            <a href="https://julasz.github.io/lapuchadesign/" class="linkDecoration_none"
+                            <a href="https://boutiqueapartmentsbuenosaires.netlify.app/" class="linkDecoration_none"
                                 target="_blank"><button class="proy__row__column2--btn">VER PROYECTO</button></a>
                         </div>
                     </div>
@@ -232,7 +253,7 @@
                                 <span class="proy__row__column1--title-B">La Pucha Design</span> - Sitio Web
                             </div>
                             <div class="proy__row__column1--desc"> Se desarrollo en equipo el portafolio de Mora,
-                                una diseñadora indumentaria que diseña prendas únicas e irrepetibles </div>
+                                una diseñadora indumentaria que diseña prendas únicas e irrepetibles. </div>
                             <div class="proy__row__column1--tareasTitle">
 
                                 <p>Tareas realizadas en el proyecto:</p>
@@ -264,15 +285,19 @@
 
                         </div>
                         <div class="proy__row__column2">
+                            <div class="proy__row__column2--title">
+                                <span class="proy__row__column2--title-Mob">La Pucha Design</span>
+                            </div>
                             <img class="proy__row__column2--img" src="./img/img_proyecto_01.png"
                                 alt="Pagina Boutique apartments BSAS">
-                            <a href="https://boutiqueapartmentsbuenosaires.netlify.app/" class="linkDecoration_none"
+                            <a href="https://julasz.github.io/lapuchadesign/" class="linkDecoration_none"
                                 target="_blank"><button class="proy__row__column2--btn">VER PROYECTO</button></a>
                         </div>
                     </div>
                     <!-- Desde aca agrego otro proyecto  -->
                     <div class="proy__btn__ir">
-                        <img src="./img/boton_ir.png" class="btnVueltaIr" alt="Proyecto proximo">
+                        <img src="./img/boton_ir.png" alt="Proyecto proximo" class="proy__btn__irImg btnVueltaIr">
+                        <div class="proy__btn__irImg-bloque"></div>
                     </div>
                 </div>
                 <!-- -->
@@ -281,9 +306,9 @@
             <img class="proyect__fondo3" src="./img/fondo__6.png" alt="Fondo de pantalla">
         </div>
     </div>
-    <div class="pagSeparador"></div>
+    <div class="pagSeparadorCONT0"></div>
     <div id="Contacto"></div>
-    <div class="pagSeparador4"></div>
+    <div class="pagSeparadorCONT1"></div>
     <!---------------->
     <!-- !CONTACTO! -->
     <!---------------->
@@ -328,70 +353,61 @@
                         También podes encontrarme en
                     </div>
                     <div class="cont__row2__column2--redes">
-                        <div class="cont__row2__column2--redes12">
-                            <div class="cont__row2__column2--redes12_1">
-                                <div class="cont__row2__column2--redesFondo">
-                                    <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none"
-                                        target="_blank">
-                                        <img src="./img/red__01__face.png" alt="Facebook"
-                                            class="cont__row2__column2--redesFondo--img">
-                                    </a>
-                                </div>
-                                <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none"
-                                    target="_blank">
-                                    <div class="cont__row2__column2--redes12_1--desc">/juli.zerial</div>
-                                </a>
-                            </div>
-                            <div class="cont__row2__column2--redes12_2">
-                                <div class="cont__row2__column2--redesFondo">
-                                    <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
-                                        target="_blank">
-                                        <img src="./img/red__03__inst.png" alt="Instagram"
-                                            class="cont__row2__column2--redesFondo--img">
-                                    </a>
-                                </div>
-                                <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
-                                    target="_blank">
-                                    <div class="cont__row2__column2--redes12_2--desc">/juzerial</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="cont__row2__column2--redes34">
-                            <div class="cont__row2__column2--redes34_3">
-                                <div class="cont__row2__column2--redesFondo">
-                                    <a href="https://twitter.com/JuliZerial" class="linkDecoration_none"
-                                        target="_blank">
-                                        <img src="./img/red__02__tw.png" alt="Twitter"
-                                            class="cont__row2__column2--redesFondo--img">
-                                    </a>
-                                </div>
-                                <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
-                                    <div class="cont__row2__column2--redes34_3--desc">/juli.zerial</div>
-                                </a>
-                            </div>
-                            <div class="cont__row2__column2--redes34_4">
-                                <div class="cont__row2__column2--redesFondo">
-                                    <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
-                                        target="_blank">
-                                        <img src="./img/red__04__link.png" alt="Linkedin"
-                                            class="cont__row2__column2--redesFondo--img">
-                                    </a>
-                                </div>
-                                <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none"
-                                    target="_blank">
-                                    <div class="cont__row2__column2--redes34_4--desc">/juzerial</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont__row2__column3">
-                        <img class="cont__row2__column3__fondo" src="./img/fondo__8.png" alt="Fondo">
-                    </div>
+                        <!-- <div class="cont__row2__column2--redes1"> -->
 
-
+                        <div class="cont__row2__column2--redesFondo">
+                            <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none" target="_blank">
+                                <img src="./img/red__01__face.png" alt="Facebook"
+                                    class="cont__row2__column2--redesFondo--img">
+                            </a>
+                        </div>
+                        <!-- <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none" target="_blank">
+                                <div class="cont__row2__column2--redes1--desc">/juli.zerial</div>
+                            </a> 
+                        </div>
+                        <div class="cont__row2__column2--redes1">-->
+                        <div class="cont__row2__column2--redesFondo">
+                            <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                                <img src="./img/red__03__inst.png" alt="Instagram"
+                                    class="cont__row2__column2--redesFondo--img">
+                            </a>
+                        </div>
+                        <!-- <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                                <div class="cont__row2__column2--redes1--desc">/juzerial</div>
+                            </a> 
+                        </div>
+                        <div class="cont__row2__column2--redes1">-->
+                        <div class="cont__row2__column2--redesFondo">
+                            <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
+                                <img src="./img/red__02__tw.png" alt="Twitter"
+                                    class="cont__row2__column2--redesFondo--img">
+                            </a>
+                        </div>
+                        <!-- <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
+                                <div class="cont__row2__column2--redes1--desc">/juli.zerial</div>
+                            </a> 
+                        </div>
+                        <div class="cont__row2__column2--redes1">-->
+                        <div class="cont__row2__column2--redesFondo">
+                            <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                                <img src="./img/red__04__link.png" alt="Linkedin"
+                                    class="cont__row2__column2--redesFondo--img">
+                            </a>
+                        </div>
+                        <!-- <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                                <div class="cont__row2__column2--redes1--desc">/juzerial</div>
+                            </a> 
+                        </div>-->
+                    </div>
                 </div>
+                <div class="cont__row2__column3">
+                    <img class="cont__row2__column3__fondo" src="./img/fondo__8.png" alt="Fondo">
+                </div>
+
+
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
