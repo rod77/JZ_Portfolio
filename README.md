@@ -1,7 +1,8 @@
 # JZ Portfolio
 
 _Pagina web donde se muestra el Portfolio de JZ_<br>
-_https://rod77.github.io/JZ_Portfolio/_
+_Version Productiva:_
+_https://julietazerial.netlify.app/_
 
 ## Comenzando 🚀
 
