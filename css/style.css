@@ -23,6 +23,28 @@ body {
   width: 100%;
   z-index: 1;
   top: 0; }
+  .nav_flex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px; }
+    .nav_flex_img {
+      border-radius: 50%; }
+    .nav_flexColumn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      letter-spacing: 2px; }
+      .nav_flexColumn_name {
+        font-family: "Euclid Circular B Regular";
+        font-weight: 600;
+        font-size: 14px;
+        color: #262626; }
+      .nav_flexColumn_subname {
+        font-family: "Euclid Circular B Regular";
+        font-weight: 400;
+        font-size: 14px;
+        color: #828282; }
   .nav_bar {
     padding: 8px 0px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -58,7 +80,7 @@ body {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     background-color: #fff; }
     .navmob_JZ {
-      margin: 8px 12px 8px 8px;
+      margin: 1px 12px 1px 8px;
       border-radius: 0;
       color: #000;
       text-decoration: none;
@@ -66,8 +88,29 @@ body {
       font-weight: 600;
       font-size: 14px;
       color: #262626;
-      letter-spacing: 4px;
+      letter-spacing: 1px;
       float: left; }
+      .navmob_JZ_flex {
+        display: flex;
+        flex-direction: row; }
+        .navmob_JZ_flex_img {
+          border-radius: 50%;
+          display: none; }
+        .navmob_JZ_flexColumn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 5px; }
+          .navmob_JZ_flexColumn_name {
+            font-family: "Euclid Circular B Regular";
+            font-weight: 600;
+            font-size: 14px;
+            color: #262626; }
+          .navmob_JZ_flexColumn_subname {
+            font-family: "Euclid Circular B Regular";
+            font-weight: 400;
+            font-size: 14px;
+            color: #828282; }
     .navmob__open {
       float: right;
       margin-right: 30px; }
@@ -149,10 +192,10 @@ body {
     height: 100vh; } }
 
 .pagSeparadorHome {
-  height: 250px; }
+  height: 150px; }
 
 .pagSeparadorArrow {
-  height: 100px; }
+  height: 10px; }
 
 .pagSeparadorSM0 {
   height: 200px; }
@@ -164,7 +207,7 @@ body {
   height: 200px; }
 
 .pagSeparadorSER1 {
-  height: 150px; }
+  height: 250px; }
 
 .pagSeparadorPROY0 {
   height: 250px; }
@@ -180,7 +223,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .pagSeparadorHome {
-    height: 0px; }
+    height: 20px; }
   .pagSeparadorArrow {
     height: 0px; }
   .pagSeparadorSM0 {
@@ -217,31 +260,31 @@ body {
   .pagSeparadorCONT0 {
     height: 0px; }
   .pagSeparadorCONT1 {
-    height: 70px; } }
+    height: 140px; } }
 
 @media only screen and (max-width: 768px) and (min-height: 800px) {
   .pagSeparadorCONT1 {
     height: 20px; } }
 
-@media only screen and (max-width: 768px) and (max-height: 400px) {
+@media only screen and (max-width: 768px) and (max-height: 550px) {
   .pagSeparadorHome {
-    height: 0px; }
+    height: 100px; }
   .pagSeparadorArrow {
     height: 0px; }
   .pagSeparadorSM0 {
-    height: 200px; }
-  .pagSeparadorSM1 {
-    height: 150px; }
-  .pagSeparadorSER0 {
-    height: 200px; }
-  .pagSeparadorSER1 {
     height: 100px; }
+  .pagSeparadorSM1 {
+    height: 100px; }
+  .pagSeparadorSER0 {
+    height: 100px; }
+  .pagSeparadorSER1 {
+    height: 50px; }
   .pagSeparadorPROY0 {
-    height: 200px; }
+    height: 100px; }
   .pagSeparadorPROY1 {
-    height: 300px; }
+    height: 200px; }
   .pagSeparadorCONT0 {
-    height: 500px; }
+    height: 300px; }
   .pagSeparadorCONT1 {
     height: 150px; } }
 
@@ -254,7 +297,7 @@ body {
     margin-top: 5vh;
     margin-right: 12.5vh; }
     .home__div__text--title {
-      font-size: 66px;
+      font-size: 72px;
       color: #262626;
       font-weight: 600;
       font-family: "Euclid Circular B Regular";
@@ -263,14 +306,14 @@ body {
       height: auto; }
     .home__div__text--subTitle {
       font-size: 18px;
-      color: #8a817c;
+      color: #333333;
       font-weight: normal;
       margin-top: 2vh;
       margin-right: 5vh;
       font-family: "Euclid Circular B Regular"; }
     .home__div__text--btn {
       margin-top: 4vh;
-      width: 185px;
+      width: 187px;
       height: 45px;
       background: transparent;
       border: none;
@@ -312,6 +355,11 @@ body {
     z-index: -5;
     right: 0;
     position: absolute; }
+  .home__div__column0__fondo {
+    z-index: -5;
+    left: 0;
+    top: 55%;
+    position: absolute; }
 
 @media only screen and (max-width: 768px) {
   .home__div {
@@ -330,7 +378,7 @@ body {
         display: flex;
         justify-content: center; }
       .home__div__text--btn {
-        margin: 10px 0 0px 0;
+        margin: 20px 0 20px 0;
         width: 138.75px;
         height: 33.75px;
         font-size: 13.5px;
@@ -361,7 +409,9 @@ body {
         transition: all 0.7s;
         transform: scale(1); }
     .home__div__column3__fondo {
-      top: 50%; } }
+      top: 50%; }
+    .home__div__column0__fondo {
+      top: 80%; } }
 
 .imgArrow {
   display: flex;
@@ -389,13 +439,15 @@ body {
     position: relative; }
     .sm__column1__fondo {
       z-index: -5;
-      right: -40%;
-      bottom: -40%;
+      right: -15%;
+      bottom: -20%;
       position: absolute; }
+    .sm__column1__fondoMob {
+      display: none; }
     .sm__column1__img {
       margin: 5vh 10vh 0 0;
-      width: 310px;
-      height: 347px; }
+      width: auto;
+      height: auto; }
   .sm__column2 {
     width: 70vh;
     display: flex;
@@ -404,20 +456,20 @@ body {
     justify-content: center;
     margin-left: 50px; }
     .sm__column2__title {
-      font-size: 60px;
+      font-size: 54px;
       color: #1D1C24;
-      font-weight: 600;
+      font-weight: 500;
       font-family: "Euclid Circular B Regular"; }
     .sm__column2__subTitle {
       font-size: 18px;
       font-weight: 400;
-      color: #BDBDBD;
+      color: #8A817C;
       font-family: "Euclid Circular B Regular"; }
     .sm__column2__desc {
       font-size: 16px;
       font-weight: 300;
       font-family: "Euclid Circular B Regular";
-      color: #BDBDBD;
+      color: #828282;
       margin-top: 2vh;
       margin-right: 13vh;
       letter-spacing: 1px;
@@ -425,7 +477,7 @@ body {
     .sm__column2__desc p {
       margin-top: 1vh; }
     .sm__column2__btn {
-      width: 185px;
+      width: 187px;
       height: 45px;
       margin-top: 3vh;
       background: transparent;
@@ -453,10 +505,13 @@ body {
     justify-self: center;
     margin: 0; }
     .sm__column1__fondo {
-      left: -40%;
-      bottom: 30%;
-      height: 100%;
-      width: auto; }
+      display: none; }
+    .sm__column1__fondoMob {
+      display: inline-block;
+      z-index: -5;
+      right: -15%;
+      bottom: -20%;
+      position: absolute; }
     .sm__column1__img {
       margin: 0;
       width: 220px;
@@ -470,8 +525,9 @@ body {
         .sm__column2__title--icon {
           display: none; }
       .sm__column2__desc {
-        margin: 1vh 0 0 1vh;
-        line-height: 20px; }
+        margin: 1vh 1.5vh 0vh 1.5vh;
+        line-height: 20px;
+        text-align: justify; }
       .sm__column2__btn {
         width: 138.75px;
         height: 33.75px;
@@ -491,13 +547,13 @@ body {
     align-items: center;
     justify-content: center; }
     .ser__column2__title {
-      font-size: 60px;
+      font-size: 54px;
       color: #1D1C24;
       font-weight: 600;
       font-family: "Euclid Circular B Regular"; }
     .ser__column2__subTitle {
       font-size: 18px;
-      color: #BDBDBD;
+      color: #8A817C;
       font-family: "Euclid Circular B Regular";
       margin-top: 0.1vh; }
     .ser__column2__servicios {
@@ -535,7 +591,7 @@ body {
         .ser__column2__servicios_uno--desc {
           font-size: 14px;
           margin-top: 1.3vh;
-          color: #8a817c;
+          color: #828282;
           font-family: "Euclid Circular B Regular";
           font-weight: 400;
           text-align: center; }
@@ -582,13 +638,13 @@ body {
   align-items: center;
   justify-content: center; }
   .proy__title {
-    font-size: 60px;
+    font-size: 54px;
     color: #1D1C24;
     font-weight: 600;
     font-family: "Euclid Circular B Regular"; }
   .proy__subTitle {
     font-size: 18px;
-    color: #BDBDBD;
+    color: #8A817C;
     font-family: "Euclid Circular B Regular";
     margin-top: 1vh; }
   .proy__btn {
@@ -600,7 +656,7 @@ body {
     flex-direction: row;
     margin-top: 42px;
     justify-content: center;
-    width: 1226px;
+    width: 1350px;
     height: 474px;
     background-color: #ffffff;
     box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.03);
@@ -608,7 +664,7 @@ body {
     .proy__row__column1 {
       display: flex;
       flex-direction: column;
-      margin: 42px 66px 40px 62px; }
+      margin: 42px 30px 40px 30px; }
       .proy__row__column1--title {
         font-size: 22px;
         font-weight: 500;
@@ -671,7 +727,7 @@ body {
         margin-right: 50px; }
       .proy__row__column2--btn {
         right: 37.5%;
-        bottom: 37.5%;
+        bottom: 45%;
         position: absolute;
         width: 185px;
         height: 45px;
@@ -829,14 +885,15 @@ body {
       margin-right: 300px; }
       .cont__row2__column1--subtitle {
         font-size: 14px;
-        color: #8a817c;
-        font-family: "Euclid Circular B Regular"; }
+        color: #828282;
+        font-family: "Euclid Circular B Regular";
+        width: 342px; }
       .cont__row2__column1--form-name {
         width: 292px;
         height: 35px;
         border: 2px solid #5CD4C3;
         border-radius: 10px;
-        margin-top: 29px;
+        margin-top: 50px;
         background-color: #FDFDFD; }
         .cont__row2__column1--form-name-img {
           width: 16px;
@@ -918,14 +975,15 @@ body {
       width: 100%; }
       .cont__row2__column2--subtitle {
         font-size: 14px;
-        color: #8a817c;
+        color: #828282;
         font-family: "Euclid Circular B Regular";
         align-self: center; }
       .cont__row2__column2--redes {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 40px; }
+        margin-top: 50px;
+        width: 300px; }
         .cont__row2__column2--redesFondo {
           background-color: #5CD4C3;
           height: 30px;
@@ -949,7 +1007,7 @@ body {
           margin-bottom: 29px; }
           .cont__row2__column2--redes1--desc {
             font-size: 14px;
-            color: #8a817c;
+            color: #828282;
             font-family: "Euclid Circular B Regular";
             padding-top: 5px; }
     .cont__row2__column3 {
@@ -992,7 +1050,11 @@ body {
           height: 33.75px;
           font-size: 12px; }
     .cont__row2__column2--redes {
-      justify-content: space-around; }
+      justify-content: space-between;
+      margin-top: 50px;
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%; }
       .cont__row2__column2--redesFondo:hover {
         background-color: #5CD4C3; }
       .cont__row2__column2--redesFondo:hover .cont__row2__column2--redesFondo--img {
@@ -1003,13 +1065,19 @@ body {
 
 .linkDecoration_none {
   text-decoration: none;
-  color: white;
   font-size: 16px;
   font-weight: 500;
   font-family: "Euclid Circular B Regular"; }
   .linkDecoration_none:link {
     text-decoration: none; }
   .linkDecoration_none:visited {
+    text-decoration: none; }
+
+.linkDecoration_none_nav {
+  text-decoration: none; }
+  .linkDecoration_none_nav:link {
+    text-decoration: none; }
+  .linkDecoration_none_nav:visited {
     text-decoration: none; }
 
 .btn-flotante {
@@ -1029,3 +1097,23 @@ body {
     .btn-flotante--img {
       width: 30px;
       height: auto; } }
+
+.swal-overlay {
+  background-color: rgba(191, 237, 230, 0.45); }
+
+.swal-modal {
+  font-family: "Euclid Circular B Regular"; }
+
+.swal-button--confirm,
+.swal-button {
+  font-family: "Euclid Circular B Regular";
+  border-radius: 10px;
+  border: none !important;
+  background-color: #E9BDBE; }
+
+.swal-button--confirm:hover {
+  background-color: #E9BDBE !important; }
+
+.swal-button--confirm:active {
+  background-color: #FFDADB !important;
+  border: none !important; }

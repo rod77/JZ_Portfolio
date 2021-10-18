@@ -132,4 +132,24 @@ $(".proy__btn__vueltaImg").click(()=>{
   $(".proy__btn__irImg-bloque").hide();
   $(".proy__btn__vueltaImg-bloque").show();
 }) 
-  
+
+ 
+var anuncioParam;
+var queryString = window.location.search;
+var urlParams = new URLSearchParams(queryString);
+anuncioParam = urlParams.get('send'); 
+console.log(queryString)
+
+if(anuncioParam=='ok'){
+  swal({
+    title: "Mensaje enviado con éxito",    
+  });
+  anuncioParam=''
+  window.history.replaceState({}, document.title, "/" + "");
+}
+
+
+var URLactual = window.location;
+var inputDireccion
+inputDireccion = document.getElementById("direccion");
+inputDireccion.value = `${URLactual}?send=ok`

@@ -23,8 +23,10 @@ _Herramientas utilizadas_
 <img height="20" alt="JS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
 <code><img height="20" alt="SASS" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"></code>
 </p>
-Tambien la siguiente libreria JS para generar animaciones: <br>
-<p><img height="20" alt="JS" src="https://cdn-images-1.medium.com/max/800/1*idpT5sopU1QadJagaSWFiQ.png"> - [ <a href="https://scrollrevealjs.org/"> Scrollreveal]</a></p>
+Tambien las siguientes librerias JS: <br>
+<p><img height="20" alt="Scrollreveal" src="https://cdn-images-1.medium.com/max/800/1*idpT5sopU1QadJagaSWFiQ.png"> - [ <a href="https://scrollrevealjs.org/"> Scrollreveal]</a></p>
+<p><img height="20" alt="SweetAlert" src="https://raw.githubusercontent.com/t4t5/sweetalert/e3c2085473a0eb5a6b022e43eb22e746380bb955/assets/logotype.png"> - [SweetAlert]</p>
+<p><img height="20" alt="JQuery" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jquery/jquery.png"> - [JQuery]</p>
 
  
 ---

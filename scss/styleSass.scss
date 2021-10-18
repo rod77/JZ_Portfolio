@@ -1,11 +1,11 @@
 $color_fondo:#FDFDFD;
 $color_title:#1D1C24;
 
-$color_gray_1:#ffffff;
+$color_gray_1:#333333;
 $color_gray_2:#F4F3EE;
-$color_gray_3:#8a817c;
+$color_gray_3:#828282;
 $color_gray_4:#262626;
-$color_gray_5:#BDBDBD;
+$color_gray_5:#8A817C;
 
 $color_pink_1:#FFF1F0;
 $color_pink_2:#FFDADB;
@@ -52,6 +52,39 @@ body {
   width: 100%;
   z-index: 1;
   top: 0;
+
+  &_flex {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 60px;
+
+    &_img {
+      border-radius: 50%;
+    }
+
+    &Column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      letter-spacing: 2px;
+
+      &_name {
+        font-family: $font_principal;
+        font-weight: 600;
+        font-size: 14px;
+        color: $color_gray_4;
+      }
+
+      &_subname {
+        font-family: $font_principal;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color_gray_3;
+      }
+    }
+  }
 
   &_bar {
     padding: 8px 0px;
@@ -102,7 +135,7 @@ body {
     background-color: #fff;
 
     &_JZ {
-      margin: 8px 12px 8px 8px;
+      margin: 1px 12px 1px 8px;
       border-radius: 0;
       color: #000;
       text-decoration: none;
@@ -110,8 +143,39 @@ body {
       font-weight: 600;
       font-size: 14px;
       color: $color_gray_4;
-      letter-spacing: 4px;
+      letter-spacing: 1px;
       float: left;
+
+      &_flex {
+        display: flex;
+        flex-direction: row;
+
+        &_img {
+          border-radius: 50%;
+          display: none;
+        }
+
+        &Column {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 5px;
+
+          &_name {
+            font-family: $font_principal;
+            font-weight: 600;
+            font-size: 14px;
+            color: $color_gray_4;
+          }
+
+          &_subname {
+            font-family: $font_principal;
+            font-weight: 400;
+            font-size: 14px;
+            color: $color_gray_3;
+          }
+        }
+      }
     }
 
     &__open {
@@ -229,11 +293,11 @@ body {
 
 .pagSeparador {
   &Home {
-    height: 250px; //3
+    height: 150px; //3
   }
 
   &Arrow {
-    height: 100px; //7
+    height: 10px; //7
   }
 
   &SM0 {
@@ -249,7 +313,7 @@ body {
   }
 
   &SER1 {
-    height: 150px; //5
+    height: 250px; //5
   }
 
   &PROY0 {
@@ -275,7 +339,7 @@ body {
 
   .pagSeparador {
     &Home {
-      height: 0px; //3
+      height: 20px; //3
     }
 
     &Arrow {
@@ -330,7 +394,7 @@ body {
     }
 
     &CONT1 {
-      height: 70px; //4
+      height: 140px; //4
     }
 
     @media only screen and (min-height: 800px) {
@@ -341,11 +405,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-height: 400px) {
+@media only screen and (max-width: 768px) and (max-height: 550px) {
 
   .pagSeparador {
     &Home {
-      height: 0px; //3
+      height: 100px; //3
     }
 
     &Arrow {
@@ -353,31 +417,31 @@ body {
     }
 
     &SM0 {
-      height: 200px; //-
+      height: 100px; //-
     }
 
     &SM1 {
-      height: 150px; //2
+      height: 100px; //2
     }
 
     &SER0 {
-      height: 200px; //-
+      height: 100px; //-
     }
 
     &SER1 {
-      height: 100px; //5
+      height: 50px; //5
     }
 
     &PROY0 {
-      height: 200px; //-
+      height: 100px; //-
     }
 
     &PROY1 {
-      height: 300px; //4
+      height: 200px; //4
     }
 
     &CONT0 {
-      height: 500px; //6
+      height: 300px; //6
     }
 
     &CONT1 {
@@ -398,7 +462,7 @@ body {
     margin-right: 12.5vh;
 
     &--title {
-      font-size: 66px;
+      font-size: 72px;
       color: $color_gray_4;
       font-weight: 600;
       font-family: $font_principal;
@@ -411,7 +475,7 @@ body {
 
     &--subTitle {
       font-size: 18px;
-      color: $color_gray_3;
+      color: $color_gray_1;
       font-weight: normal;
       margin-top: 2vh;
       margin-right: 5vh;
@@ -420,7 +484,7 @@ body {
 
     &--btn {
       margin-top: 4vh;
-      width: 185px;
+      width: 187px;
       height: 45px;
       background: transparent;
       border: none;
@@ -486,6 +550,15 @@ body {
     }
   }
 
+  &__column0 {
+    &__fondo {
+      z-index: -5;
+      left: 0;
+      top: 55%;
+      position: absolute;
+    }
+  }
+
 }
 
 //Home For mobile 
@@ -516,7 +589,7 @@ body {
       }
 
       &--btn {
-        margin: 10px 0 0px 0;
+        margin: 20px 0 20px 0;
         width: 138.75px;
         height: 33.75px;
         font-size: 13.5px;
@@ -571,6 +644,12 @@ body {
       }
     }
 
+    &__column0 {
+      &__fondo {
+        top: 80%;
+      }
+    }
+
   }
 
 }
@@ -614,15 +693,20 @@ body {
 
     &__fondo {
       z-index: -5;
-      right: -40%;
-      bottom: -40%;
+
+      right: -15%;
+      bottom: -20%;
       position: absolute;
+    }
+
+    &__fondoMob {
+      display: none;
     }
 
     &__img {
       margin: 5vh 10vh 0 0;
-      width: 310px;
-      height: 347px;
+      width: auto;
+      height: auto;
     }
 
   }
@@ -638,9 +722,9 @@ body {
 
 
     &__title {
-      font-size: 60px;
+      font-size: 54px;
       color: $color_title;
-      font-weight: 600;
+      font-weight: 500;
       font-family: $font_principal
     }
 
@@ -655,7 +739,7 @@ body {
       font-size: 16px;
       font-weight: 300;
       font-family: $font_principal;
-      color: $color_gray_5;
+      color: $color_gray_3;
       margin-top: 2vh;
       margin-right: 13vh;
       letter-spacing: 1px;
@@ -667,7 +751,7 @@ body {
     }
 
     &__btn {
-      width: 185px;
+      width: 187px;
       height: 45px;
       margin-top: 3vh;
       background: transparent;
@@ -710,12 +794,17 @@ body {
     &__column1 {
 
       &__fondo {
-        left: -40%;
-        bottom: 30%;
-        height: 100%;
-        width: auto;
+        display: none
       }
 
+      &__fondoMob {
+        display: inline-block;
+        z-index: -5;
+
+        right: -15%;
+        bottom: -20%;
+        position: absolute;
+      }
 
       &__img {
         margin: 0;
@@ -743,8 +832,9 @@ body {
 
 
       &__desc {
-        margin: 1vh 0 0 1vh;
+        margin: 1vh 1.5vh 0vh 1.5vh;
         line-height: 20px;
+        text-align: justify
       }
 
       &__btn {
@@ -778,7 +868,7 @@ body {
     justify-content: center;
 
     &__title {
-      font-size: 60px;
+      font-size: 54px;
       color: $color_title;
       font-weight: 600;
       font-family: $font_principal
@@ -924,7 +1014,7 @@ body {
   justify-content: center;
 
   &__title {
-    font-size: 60px;
+    font-size: 54px;
     color: $color_title;
     font-weight: 600;
     font-family: $font_principal;
@@ -950,7 +1040,7 @@ body {
     flex-direction: row;
     margin-top: 42px;
     justify-content: center;
-    width: 1226px;
+    width: 1350px;
     height: 474px;
     background-color: #ffffff;
     box-shadow: 1px 1px 4px 2px (rgba(0, 0, 0, 0.03));
@@ -962,7 +1052,7 @@ body {
       display: flex;
       flex-direction: column;
       //align-items: left;
-      margin: 42px 66px 40px 62px;
+      margin: 42px 30px 40px 30px;
 
       &--title {
         font-size: 22px;
@@ -1056,7 +1146,7 @@ body {
 
       &--btn {
         right: 37.5%;
-        bottom: 37.5%;
+        bottom: 45%;
         position: absolute;
         width: 185px;
         height: 45px;
@@ -1307,21 +1397,24 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       margin-right: 300px;
 
       &--subtitle {
         font-size: 14px;
         color: $color_gray_3;
-        font-family: $font_principal
+        font-family: $font_principal;
+        width: 342px;
       }
 
       &--form {
+
         &-name {
           width: 292px;
           height: 35px;
           border: 2px solid $color_green_2;
           border-radius: 10px;
-          margin-top: 29px;
+          margin-top: 50px;
           background-color: $color_fondo;
 
           &-img {
@@ -1443,7 +1536,8 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 50px;
+        width: 300px;
 
         &Fondo {
           background-color: $color_green_2;
@@ -1553,7 +1647,11 @@ body {
       //Fin Column 1
       &__column2 {
         &--redes {
-          justify-content: space-around;
+          justify-content: space-between;
+          margin-top: 50px;
+          width: 80%;
+          margin-right: 10%;
+          margin-left: 10%;
 
           &Fondo:hover {
             background-color: $color_green_2;
@@ -1581,10 +1679,21 @@ body {
 
 .linkDecoration_none {
   text-decoration: none;
-  color: white;
   font-size: 16px;
   font-weight: 500;
   font-family: $font_principal;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.linkDecoration_none_nav {
+  text-decoration: none;
 
   &:link {
     text-decoration: none;
@@ -1618,4 +1727,31 @@ body {
       height: auto;
     }
   }
+}
+
+
+.swal-overlay {
+  background-color: rgba(191, 237, 230, 0.45);
+  //background-color: rgba(255, 241, 240, 0.45);
+}
+
+.swal-modal {
+  font-family: $font_principal;
+}
+
+.swal-button--confirm,
+.swal-button {
+  font-family: $font_principal;
+  border-radius: 10px;
+  border: none !important;
+  background-color: $color_pink_3;
+}
+
+.swal-button--confirm:hover {
+  background-color: $color_pink_3 !important;
+}
+
+.swal-button--confirm:active {
+  background-color: $color_pink_2 !important;
+  border: none !important;
 }

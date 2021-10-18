@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JZ</title>
-    <link rel="shortcut icon" href="favicon.png">
+    <title>JZ - Developer web</title>
+    <link rel="shortcut icon" href="favicon3.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,9 +19,17 @@
 
     <div class="nav">
         <div class="nav_bar">
-            <div class="nav_bar__item_jz">
-                <a href="#home" class="nav_bar__item nav_bar__item_jz NavBtn__2">JZ</a>
-            </div>
+
+            <a href="#home" class="nav_bar__item linkDecoration_none_nav">
+                <div class="nav_flex">
+                    <img src="./img/item_nav.png" alt="JZ" class="nav_flex_img">
+                    <div class="nav_flexColumn">
+                        <p class="nav_flexColumn_name">Julieta Zerial</p>
+                        <p class="nav_flexColumn_subname">Desarrolladora web</p>
+                    </div>
+                </div>
+            </a>
+
             <div class="nav_bar__right">
                 <a href="#SobreMi" class="nav_bar__item NavBtn__2">SOBRE MI</a>
                 <a href="#Servicios" class="nav_bar__item NavBtn__2">SERVICIOS</a>
@@ -34,7 +42,14 @@
 
     <div class="navmob">
         <div class="navmob__bar">
-            <a href="#home" class="navmob_JZ">JZ</a>
+            <a href="#home" class="navmob_JZ linkDecoration_none_nav">
+                <div class="navmob_JZ_flex">
+                    <div class="navmob_JZ_flexColumn">
+                        <p class="navmob_JZ_flexColumn_name">Julieta Zerial</p>
+                        <p class="navmob_JZ_flexColumn_subname">Desarrolladora web</p>
+                    </div>
+                </div>
+            </a>
             <img class="navmob__open menu" src="./img/menu.png" alt="Menu">
             <img class="navmob__open cierreMenu" src="./img/menu.png" alt="Cierre Menu">
         </div>
@@ -54,6 +69,9 @@
     <!------------>
     <div class="pag">
         <div class="home">
+            <div class="home__div__column0">
+                <img class="home__div__column0__fondo" src="./img/fondo__000.png" alt="Fondo">
+            </div>
             <div class="home__div">
                 <div class="home__div__text">
                     <h2 class="home__div__text--title mov1">Hola <img src="./img/Hola_icon.png" alt="Hola"
@@ -65,11 +83,12 @@
                     </div>
                 </div>
 
-                <img class="home__div__img mov5" src="./img/img_prueba.png" alt="imagen de prueba">
+                <img class="home__div__img mov5" src="./img/img_principal.png" alt="Hola, Soy Julieta">
 
                 <div class="home__div__redes">
                     <div class="home__div__redesFondo mov6">
-                        <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                        <a href="https://www.linkedin.com/in/julieta-zerial/" class="linkDecoration_none"
+                            target="_blank">
                             <img src="./img/red__04__link.png" alt="Linkedin" class="home__div__redesFondo--img">
                         </a>
                     </div>
@@ -113,12 +132,12 @@
         <div class="sm">
             <div class="sm__column1">
                 <img class="sm__column1__fondo" src="./img/fondo__1.png" alt="Fondo de pantalla">
-                <img class="sm__column1__img" src="./img/img_prueba_SM.png" alt="Imagen Sobre Mí">
+                <img class="sm__column1__img" src="./img/img_SobreMi_old.png" alt="Imagen Sobre Mí">
+                <img class="sm__column1__fondoMob" src="./img/fondo__6.png" alt="Fondo de pantalla">
             </div>
             <div class="sm__column2">
                 <div class="sm__column2__title">Sobre mí <span class="sm__column2__title--icon"><img
                             src="./img/sobreMi_icon.png" alt="Sobre Mí"></span></div>
-                <!-- <div class="sm__column2__subTitle">Lorem ipsum lorem ipsum lorem ipsum</div> -->
                 <div class="sm__column2__desc">
                     <p>Estudié Hotelería, un mundo completamente distinto al de la programación web que empecé a
                         incursionar hace poco, en pandemia. Me gusta tener varios caminos donde poder enfocarme.</p>
@@ -128,7 +147,9 @@
                     <p>Amante de compartir tiempo en familia y con amigos y disfrutar los ratos libres.</p>
                 </div>
                 <div class="sm__column2__btn--flex">
-                    <button class="sm__column2__btn ">Descargar CV</button>
+                    <a href="/CV-JulietaZerial.pdf" target="_blank">
+                        <button class="sm__column2__btn ">Descargar CV</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -147,7 +168,7 @@
             </div>
             <div class="ser__column2">
                 <div class="ser__column2__title">Servicios</div>
-                <div class="ser__column2__subTitle">Lorem ipsum lorem ipsum lorem ipsum</div>
+                <!-- <div class="ser__column2__subTitle">Lorem ipsum lorem ipsum lorem ipsum</div> -->
                 <div class="ser__column2__servicios">
                     <div class="ser__column2__servicios_uno">
                         <div class="ser__column2__servicios_uno--img--fondo">
@@ -221,7 +242,8 @@
                                 <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_1.png"
                                     alt="Icono de tarea">
                                 <div class="proy__row__column1--tareasFlex-desc">
-                                    Adaptación a dispositivos móbiles, tablets y landscape
+                                    Desarrollo del sitio web con 5 secciones. Utilización de HTML, CSS y SASS<br>
+                                    Adaptación a dispositivos móbiles, tablets y landscape.
                                 </div>
                             </div>
                             <div class="proy__row__column1--tareasFlex">
@@ -233,11 +255,11 @@
                                 </div>
                             </div>
                             <div class="proy__row__column1--tareasFlex">
-                                <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_2.png"
+                                <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_3.png"
                                     alt="Icono de tarea">
                                 <div class="proy__row__column1--tareasFlex-desc">
                                     Creación de los valores, misión y visión<br>
-                                    Logo de la empresa
+                                    Diseño de redes
                                 </div>
                             </div>
 
@@ -246,7 +268,7 @@
                             <div class="proy__row__column2--title">
                                 <span class="proy__row__column2--title-Mob">Boutique Apartments BA</span>
                             </div>
-                            <img class="proy__row__column2--img" src="./img/img_proyecto_00.png"
+                            <img class="proy__row__column2--img" src="./img/img_proyecto_01.png"
                                 alt="Pagina La Pucha Desing">
                             <a href="https://boutiqueapartmentsbuenosaires.netlify.app/" class="linkDecoration_none"
                                 target="_blank"><button class="proy__row__column2--btn">VER PROYECTO</button></a>
@@ -280,7 +302,7 @@
                                 </div>
                             </div>
                             <div class="proy__row__column1--tareasFlex">
-                                <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_2.png"
+                                <img class="proy__row__column1--tareasFlex-img" src="./img/icon_proy_3.png"
                                     alt="Icono de tarea">
                                 <div class="proy__row__column1--tareasFlex-desc">
                                     Creación de los valores, misión y visión<br>
@@ -293,7 +315,7 @@
                             <div class="proy__row__column2--title">
                                 <span class="proy__row__column2--title-Mob">La Pucha Design</span>
                             </div>
-                            <img class="proy__row__column2--img" src="./img/img_proyecto_01.png"
+                            <img class="proy__row__column2--img" src="./img/img_proyecto_02.png"
                                 alt="Pagina Boutique apartments BSAS">
                             <a href="https://julasz.github.io/lapuchadesign/" class="linkDecoration_none"
                                 target="_blank"><button class="proy__row__column2--btn">VER PROYECTO</button></a>
@@ -333,7 +355,9 @@
                     <div class="cont__row2__column1--subtitle">
                         Completá el formulario para ponernos en contacto
                     </div>
-                    <div class="cont__row2__column1--form">
+                    <form action="https://formsubmit.co/julieta.zerial@gmail.com" method="POST"
+                        class="cont__row2__column1--form">
+
                         <div class="cont__row2__column1--form-name">
                             <img src="./img/form__1.png" alt="name" class="cont__row2__column1--form-name-img">
                             <input type="text" id="name" name="name" placeholder="Nombre"
@@ -341,68 +365,60 @@
                         </div>
                         <div class="cont__row2__column1--form-mail">
                             <img src="./img/form__2.png" alt="E-mail" class="cont__row2__column1--form-mail-img">
-                            <input type="text" id="fname" name="fname" placeholder="E-mail"
+                            <input type="email" id="fname" name="fname" placeholder="E-mail"
                                 class="cont__row2__column1--form-mail-input">
                         </div>
                         <div class="cont__row2__column1--form-comment">
-                            <textarea class="cont__row2__column1--form-comment-txt" rows="10" cols="30"
-                                placeholder="Escribe un mensaje..."></textarea>
+                            <textarea type="text" name="comment" class="cont__row2__column1--form-comment-txt" rows="10"
+                                cols="30" placeholder="Escribe un mensaje..."></textarea>
                         </div>
                         <div class="cont__row2__column1--flex">
-                            <button class="cont__row2__column1--flex--btn">¡Hablemos!</button>
+                            <button type="submit" class="cont__row2__column1--flex--btn"
+                                id="BTcontacto">¡Hablemos!</button>
                         </div>
-                    </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nueva Consulta!">
+                        <input type="hidden" name="_next" id="direccion">
+
+                    </form>
                 </div>
                 <div class="cont__row2__column2">
                     <div class="cont__row2__column2--subtitle">
                         También podes encontrarme en
                     </div>
                     <div class="cont__row2__column2--redes">
-                        <!-- <div class="cont__row2__column2--redes1"> -->
 
                         <div class="cont__row2__column2--redesFondo">
-                            <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none" target="_blank">
-                                <img src="./img/red__01__face.png" alt="Facebook"
+                            <a href="https://www.linkedin.com/in/julieta-zerial/" class="linkDecoration_none"
+                                target="_blank">
+                                <img src="./img/red__04__link.png" alt="Linkedin"
                                     class="cont__row2__column2--redesFondo--img">
                             </a>
                         </div>
-                        <!-- <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none" target="_blank">
-                                <div class="cont__row2__column2--redes1--desc">/juli.zerial</div>
-                            </a> 
-                        </div>
-                        <div class="cont__row2__column2--redes1">-->
-                        <div class="cont__row2__column2--redesFondo">
-                            <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
-                                <img src="./img/red__03__inst.png" alt="Instagram"
-                                    class="cont__row2__column2--redesFondo--img">
-                            </a>
-                        </div>
-                        <!-- <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
-                                <div class="cont__row2__column2--redes1--desc">/juzerial</div>
-                            </a> 
-                        </div>
-                        <div class="cont__row2__column2--redes1">-->
                         <div class="cont__row2__column2--redesFondo">
                             <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
                                 <img src="./img/red__02__tw.png" alt="Twitter"
                                     class="cont__row2__column2--redesFondo--img">
                             </a>
                         </div>
-                        <!-- <a href="https://twitter.com/JuliZerial" class="linkDecoration_none" target="_blank">
-                                <div class="cont__row2__column2--redes1--desc">/juli.zerial</div>
-                            </a> 
-                        </div>
-                        <div class="cont__row2__column2--redes1">-->
                         <div class="cont__row2__column2--redesFondo">
-                            <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
-                                <img src="./img/red__04__link.png" alt="Linkedin"
+                            <a href="https://www.facebook.com/juli.zerial/" class="linkDecoration_none" target="_blank">
+                                <img src="./img/red__01__face.png" alt="Facebook"
                                     class="cont__row2__column2--redesFondo--img">
                             </a>
                         </div>
-                        <!-- <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
-                                <div class="cont__row2__column2--redes1--desc">/juzerial</div>
-                            </a> 
-                        </div>-->
+
+                        <div class="cont__row2__column2--redesFondo">
+                            <a href="https://www.instagram.com/juzerial/" class="linkDecoration_none" target="_blank">
+                                <img src="./img/red__03__inst.png" alt="Instagram"
+                                    class="cont__row2__column2--redesFondo--img">
+                            </a>
+                        </div>
+
+
+
+
                     </div>
                 </div>
                 <div class="cont__row2__column3">
@@ -414,7 +430,7 @@
         </div>
     </div>
     </div>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
